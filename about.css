@@ -1,3 +1,8 @@
+body{
+    background-color: rgb(155, 154, 154);
+}
+
+
 .tech-stack {
     padding: 4rem 2rem;
     backdrop-filter: blur(12px);
@@ -67,11 +72,11 @@
 }
 
 /* Language-specific styling */
-.python { background: url('python-logo.png'); }
-.java { background: url('java-logo.png'); }
-.javascript { background: url('javascript-logo.png'); }
-.c { background: url('c-logo.png'); }
-.cpp { background: url('cpp-logo.png'); }
+.python { background: url('python-logo.png'); background-size: contain; }
+.java { background: url('java-logo.png');  background-size: contain; }
+.javascript { background: url('javascript-logo.png');  background-size: contain; }
+.c { background: url('c-logo.png');  background-size: contain; background-repeat: no-repeat;}
+.cpp { background: url('cpp-logo.png');  background-size: contain; background-repeat: no-repeat;}
 
 .progress-bar.python { background: #3776AB; }
 .progress-bar.java { background: #007396; }
