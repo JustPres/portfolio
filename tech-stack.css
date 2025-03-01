@@ -44,10 +44,10 @@ nav a {
 }
 
 nav a:hover {
-    color: #fbbc05;
+    color: #6b6657;
 }
 nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
-    color: #fbbc05;
+    color: #6b6657;
 }
 
 .tech-stack {
