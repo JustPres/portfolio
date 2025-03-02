@@ -50,3 +50,91 @@ nav a:hover {
 nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
     color: #6b6657;
 }
+.section-title {
+    text-align: center;
+    color: white;
+}
+
+.certificates-section {
+    padding: 4rem 2rem;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.certificate-card {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-preview {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.cert-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transition: transform 0.3s ease;
+}
+/* Add hover effect to see details */
+.cert-thumbnail:hover {
+    transform: scale(1.03);
+    cursor: zoom-in;
+}
+
+/* For better mobile experience */
+@media (max-width: 768px) {
+    .cert-thumbnail {
+        padding: 5px;
+    }
+}
+
+.certificate-actions {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+}
+
+.certificate-info {
+    padding: 1.5rem;
+    color: white;
+}
+
+.preview-btn, .download-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.preview-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.download-btn {
+    background: #34a853;
+    color: white;
+    text-decoration: none;
+}
