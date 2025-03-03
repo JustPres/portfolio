@@ -21,7 +21,7 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-nav {
+.main-nav {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
     padding: 1rem 2rem;
@@ -30,25 +30,55 @@ nav {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+.main-nav ul {
     display: flex;
     justify-content:center;
     gap: 2rem;
     list-style: none;
 }
 
-nav a {
+.main-nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.main-nav a:hover {
     color: #6b6657;
 }
-nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
+.main-nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
     color: #6b6657;
+}
+
+@media (max-width: 600px) {
+   .main-nav ul li a{
+        display: none;
+    }
+    
+}
+.pagination{
+    display: none;
+}
+@media (max-width: 600px) {
+    .pagination{
+        display: block;
+        text-align: center;
+       
+    }
+    .pagination a{
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1rem 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    } 
+     
 }
 .section-title {
     text-align: center;
@@ -92,13 +122,12 @@ nav > ul > li.active > a{  /* this is new, what this does is access the first Li
     object-fit:contain;
     transition: transform 0.3s ease;
 }
-/* Add hover effect to see details */
+ 
 .cert-thumbnail:hover {
     transform: scale(1.03);
     cursor: zoom-in;
 }
-
-/* For better mobile experience */
+ 
 @media (max-width: 768px) {
     .cert-thumbnail {
         padding: 5px;
@@ -120,21 +149,4 @@ nav > ul > li.active > a{  /* this is new, what this does is access the first Li
     color: white;
 }
 
-.preview-btn, .download-btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.preview-btn {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-}
-
-.download-btn {
-    background: #34a853;
-    color: white;
-    text-decoration: none;
-}
+ 
