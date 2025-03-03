@@ -101,11 +101,23 @@ h1 {
         justify-content: center;
         flex-wrap: wrap;
         gap: 1rem;
+       
+    }
+
+    nav a:hover {
+        color: #6b6657;
     }
 
     .profile-card {
         max-width: 90%;
     }
+   
+@media (max-width: 400px){
+    .profile-img {
+        width: 100px;
+        height:  100px;
+    }
+}       
 }
 nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
     color: #333;

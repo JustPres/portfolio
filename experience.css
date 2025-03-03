@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; } 
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg, #fdfdfd, #868886, #585650, #0a0a09);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+
+}
+
+.main-nav {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #6b6657;
+}
+.main-nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
+    color: #333;
+    cursor: default;
+}
+ 
+@media (max-width: 600px) {
+    .main-nav ul{
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+     }
+     
+ }
+ .section-title {
+    text-align: center;
+    color: white;
+}
+ .timeline-section {
+    padding: 4rem 2rem;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, 
+        rgba(255,255,255,0.1), 
+        rgba(255,255,255,0.3) 50%, 
+        rgba(255,255,255,0.1));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -53px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #4285f4;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.2);
+    z-index: 1;
+}
+
+.glass-card {
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.timeline-date {
+    color: #fbbc05;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-school {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-description {
+    color: rgba(255,255,255,0.9);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.timeline-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #727c74;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    animation: pulse 2s infinite;
+}
+
+ 
+
+@media (max-width: 768px) {
+    .timeline-container {
+        padding-left: 30px;
+    }
+    
+    .timeline-dot {
+        left: -43px;
+    }
+    
+    .glass-card {
+        padding: 1rem;
+    }
+}

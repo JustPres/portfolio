@@ -48,38 +48,19 @@ body {
     color: #6b6657;
 }
 .main-nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
-    color: #6b6657;
+    color: #0f0f0f;
 }
-
+/*-------------------------------------------*/
 @media (max-width: 600px) {
-   .main-nav ul li a{
-        display: none;
+   .main-nav ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+       
     }
     
 }
-.pagination{
-    display: none;
-}
-@media (max-width: 600px) {
-    .pagination{
-        display: block;
-        text-align: center;
-       
-    }
-    .pagination a{
-        backdrop-filter: blur(10px);
-        background: rgba(255, 255, 255, 0.1);
-        padding: 1rem 2rem;
-        border-radius: 15px;
-        margin-bottom: 2rem;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s ease;
-    } 
-     
-}
+
 .section-title {
     text-align: center;
     color: white;
@@ -93,7 +74,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -127,7 +107,11 @@ body {
     transform: scale(1.03);
     cursor: zoom-in;
 }
- 
+@media (max-width: 300px){
+    .certificates-section{
+        padding: 0%;
+    }
+} 
 @media (max-width: 768px) {
     .cert-thumbnail {
         padding: 5px;
