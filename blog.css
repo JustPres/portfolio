@@ -122,3 +122,11 @@ body{
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
+#social-media{
+    text-decoration: none;
+    color:  rgba(0, 0, 0, 0.61);
+}
+#social-media:hover{
+    color: tomato;
+    font-weight: bold;
+}
