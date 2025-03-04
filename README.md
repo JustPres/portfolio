@@ -32,3 +32,10 @@ A modern developer portfolio website featuring glassmorphism design and responsi
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/portfolio.git
+
+```
+## 🌐 Let's Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20Professionally-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]( https://www.linkedin.com/in/justine-lopez-b0506b241/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow%20My%20Work-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JustPres)  
+ 
