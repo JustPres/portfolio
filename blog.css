@@ -48,7 +48,6 @@ body{
 }
 .main-nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
     color: #333;
-    cursor: default;
 }
  
 @media (max-width: 600px) {
@@ -58,7 +57,8 @@ body{
             gap: 1rem;
      }
      
- }blog-container {
+ }
+ .blog-container {
     max-width: 800px;
     margin: 2rem auto;
     backdrop-filter: blur(12px);
