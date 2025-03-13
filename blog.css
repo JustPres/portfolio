@@ -58,8 +58,7 @@ body{
             gap: 1rem;
      }
      
- }
- .blog-container {
+ }blog-container {
     max-width: 800px;
     margin: 2rem auto;
     backdrop-filter: blur(12px);
