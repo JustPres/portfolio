@@ -141,7 +141,13 @@ body{
 .cpp { background: url('cpp-logo.png');  background-size: contain; background-repeat: no-repeat;}
 .bootstrap { background: url('bootstrap.png');  background-size: contain; background-repeat: no-repeat;}
 .android_studio { background: url('android_studio.png');  background-size: contain; background-repeat: no-repeat;}
-.visual_studio_code { background: url('visual_studio_code.png');  background-size: contain; background-repeat: no-repeat;}
+.vscode { background: url('vscode.png');  background-size: contain; background-repeat: no-repeat;}
+.github { background: url('github.png');  background-size: contain; background-repeat: no-repeat;}
+.html { background: url('html.png');  background-size: contain; background-repeat: no-repeat;}
+.css { background: url('css.png');  background-size: contain; background-repeat: no-repeat;}
+.gdrive { background: url('gdrive.png');  background-size: contain; background-repeat: no-repeat;}
+.git { background: url('git.png');  background-size: contain; background-repeat: no-repeat;}
+
 
 .progress-bar.python { background: #F7DF1E; }
 .progress-bar.java { background: #007396; }
@@ -150,7 +156,12 @@ body{
 .progress-bar.cpp { background: #00599C; }
 .progress-bar.bootstrap { background: #7952B3; }
 .progress-bar.android_studio { background: #3DDC84; }
-.visual_studio_code { background: #00599C; }
+.progress-bar.visual_studio_code { background: #00599C; }
+.progress-bar.git_hub { background: #171818; }
+.progress-bar.ht_ml { background: #E34F26; }
+.progress-bar.cs_s { background: #1572B6; }
+.progress-bar.g_drive { background: #4285F4; }
+.progress-bar.g_it { background: #F34F29; }
 
 @media (max-width: 768px) {
     .skills-grid {
