@@ -90,6 +90,47 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
+@media (max-width: 1400px) {
+    nav a img{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 656px) {
+    nav a img{
+        display: block;
+    }
+    
+}
+
+@media (max-width: 656px) {
+    nav a .index{
+        display: none;
+    }
+    nav a .tech-stack{
+        display: none;
+    }
+    nav a .cert{ 
+        display: none;
+    }
+    nav a .exp{
+        display: none;
+    }
+    nav a .blog{
+        display: none;
+    }
+    nav a .info{
+        display: none;
+    }
+    nav a .phone{
+        display: none;
+    }
+    nav a .docu{
+        display: none;
+}
+}
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
