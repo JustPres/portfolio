@@ -50,14 +50,6 @@ body{
     color: #333;
 }
  
-@media (max-width: 600px) {
-    .main-nav ul{
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-     }
-     
- }
  @media (max-width: 425px) {
     .main-nav ul{
             justify-content: center;
