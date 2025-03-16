@@ -102,21 +102,24 @@ body {
         display: none;
 }
 } 
-
 .section-title {
     text-align: center;
     color: white;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
 }
 
 .certificates-section {
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
 }
 
 .certificate-card {
@@ -126,10 +129,11 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 0 0.5rem;
 }
 
 .certificate-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .certificate-preview {
@@ -141,23 +145,9 @@ body {
 .cert-thumbnail {
     width: 100%;
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
+    padding: 1rem;
     transition: transform 0.3s ease;
-}
- 
-.cert-thumbnail:hover {
-    transform: scale(1.03);
-    cursor: zoom-in;
-}
-@media (max-width: 300px){
-    .certificates-section{
-        padding: 0%;
-    }
-} 
-@media (max-width: 768px) {
-    .cert-thumbnail {
-        padding: 5px;
-    }
 }
 
 .certificate-actions {
@@ -165,14 +155,68 @@ body {
     bottom: 0;
     width: 100%;
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     padding: 1rem;
     background: linear-gradient(transparent, rgba(0,0,0,0.7));
 }
 
 .certificate-info {
-    padding: 1.5rem;
+    padding: 1rem;
     color: white;
 }
 
- 
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .certificates-section {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .certificates-grid {
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .certificate-preview {
+        height: 180px;
+    }
+    
+    .cert-thumbnail {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    
+    .certificate-card {
+        margin: 0 0.25rem;
+    }
+    
+    .certificate-actions {
+        flex-direction: column;
+        padding: 0.75rem;
+    }
+}
+
+@media (hover: none) {
+    .certificate-card:hover {
+        transform: none;
+    }
+    
+    .cert-thumbnail:hover {
+        transform: none;
+        cursor: default;
+    }
+}
