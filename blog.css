@@ -50,7 +50,7 @@ body{
     color: #333;
 }
  
-@media (max-width: 600px) {
+@media (max-width: 425px) {
     .main-nav ul{
             justify-content: center;
             flex-wrap: wrap;
@@ -58,6 +58,48 @@ body{
      }
      
  }
+ @media (max-width: 1400px) {
+    nav a img{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    nav a img{
+        display: block;
+    }
+    
+}
+
+@media (max-width: 700px) {
+
+    nav a .index{
+        display: none;
+    }
+    nav a .tech-stack{
+        display: none;
+    }
+    nav a .cert{ 
+        display: none;
+    }
+    nav a .exp{
+        display: none;
+    }
+    nav a .blog{
+        display: none;
+    }
+    nav a .info{
+        display: none;
+    }
+    nav a .phone{
+        display: none;
+    }
+    nav a .docu{
+        display: none;
+}
+   
+}
  .blog-container {
     max-width: 800px;
     margin: 2rem auto;

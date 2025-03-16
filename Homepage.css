@@ -88,6 +88,11 @@ h1 {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+   
+}
+nav > ul > li.active > a{
+    color: #000000;
+     
 }
 
 @media (max-width: 1400px) {
@@ -95,16 +100,18 @@ h1 {
         display: none;
     }
     
+    
 }
 
-@media (max-width: 656px) {
+@media (max-width: 700px) {
     nav a img{
         display: block;
     }
     
 }
 
-@media (max-width: 656px) {
+@media (max-width: 700px) {
+
     nav a .index{
         display: none;
     }
@@ -129,7 +136,20 @@ h1 {
     nav a .docu{
         display: none;
 }
+    p .info{
+        text-align: justify;
+    }
 }
+
+
+@media (max-width: 425px) {
+    nav ul{
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+     }
+     
+ }
 
 @media (max-width: 768px) {
     .hero {
@@ -138,17 +158,7 @@ h1 {
         gap: 2rem;
     }
 
-    nav ul {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-       
-    }
-
-    nav a:hover {
-        color: #6b6657;
-    }
-
+     
     .profile-card {
         max-width: 90%;
     }
@@ -158,10 +168,12 @@ h1 {
         width: 100px;
         height:  100px;
     }
+    .name {
+        font-size: 1.5rem;
+    }
+     
 }       
-}
-nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
-    color: #333;
-}
 
-  
+
+
+}  
