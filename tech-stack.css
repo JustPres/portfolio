@@ -187,7 +187,6 @@ body{
 .github { background: url('github.png');  background-size: contain; background-repeat: no-repeat;}
 .html { background: url('html.png');  background-size: contain; background-repeat: no-repeat;}
 .css { background: url('css.png');  background-size: contain; background-repeat: no-repeat;}
-.gdrive { background: url('gdrive.png');  background-size: contain; background-repeat: no-repeat;}
 .git { background: url('git.png');  background-size: contain; background-repeat: no-repeat;}
 
 
@@ -202,7 +201,6 @@ body{
 .progress-bar.git_hub { background: #171818; }
 .progress-bar.ht_ml { background: #E34F26; }
 .progress-bar.cs_s { background: #1572B6; }
-.progress-bar.g_drive { background: #4285F4; }
 .progress-bar.g_it { background: #F34F29; }
 
 @media (max-width: 768px) {
