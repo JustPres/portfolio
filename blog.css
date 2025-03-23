@@ -193,3 +193,16 @@ body{
         margin: 0.75rem 0; /* Tighter spacing */
     }
 }
+#social a{
+    text-decoration: none; 
+    font-weight: bolder; 
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-size: 300% 300%;
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent so the background shows through */
+    transition: background-position 0.5s ease; /* Animates the background position on hover */
+}
+    
+#social a:hover{
+    background-position: 100% 0;  /* Moves the gradient to create the animation effect on hover */
+}

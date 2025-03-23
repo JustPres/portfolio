@@ -80,7 +80,7 @@ body{
   nav a .index{
       display: none;
   }
-  nav a .tech-stack{
+  nav a .tech{
       display: none;
   }
   nav a .cert{ 
@@ -253,20 +253,5 @@ body{
     margin-top: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .profile-card {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
-    
-    .profile-img {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .contact-title {
-        font-size: 1.8rem;
-    }
-} 
+ 
  
