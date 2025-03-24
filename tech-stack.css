@@ -203,10 +203,21 @@ body{
 .progress-bar.cs_s { background: #1572B6; }
 .progress-bar.g_it { background: #F34F29; }
 
+
+
+
+ 
+
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
+    nav ul{
+        display: flex;
+        gap: 1rem;
+    }
+
     
     .skill-icon {
         width: 60px;

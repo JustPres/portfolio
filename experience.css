@@ -63,7 +63,7 @@ body{
  }
  
 
- @media (max-width: 1400px) {
+ @media (max-width: 3840px) {
     nav a img{
         display: none;
     }
@@ -199,6 +199,12 @@ body{
     .timeline-container {
         padding-left: 30px;
     }
+
+    nav ul{
+        display: flex;
+        gap: 1rem;
+    }
+
     
     .timeline-dot {
         left: -43px;

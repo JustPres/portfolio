@@ -61,7 +61,7 @@ body{
 }
 
 
-@media (max-width: 1400px) {
+@media (max-width: 3840px) {
   nav a img{
       display: none;
   }
@@ -253,5 +253,11 @@ body{
     margin-top: 1rem;
 }
 
- 
+@media (max-width: 768px) {
+  nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+}
  
