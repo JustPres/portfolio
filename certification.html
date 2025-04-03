@@ -66,5 +66,33 @@
             
         </div>
     </section>
+    <script> 
+   document.querySelectorAll('.certificate-preview').forEach(preview => {
+    const magnifier = document.createElement('div');
+    magnifier.classList.add('magnifier');
+    preview.appendChild(magnifier);
+
+    preview.addEventListener('mousemove', (e) => {
+        const rect = preview.getBoundingClientRect();
+        const x = e.clientX - rect.left; // Mouse X position within the card
+        const y = e.clientY - rect.top;  // Mouse Y position within the card
+
+        // Position the magnifier
+        magnifier.style.left = `${x}px`;
+        magnifier.style.top = `${y}px`;
+        magnifier.style.display = 'block';
+
+        // Adjust the transform origin of the image
+        const thumbnail = preview.querySelector('.cert-thumbnail');
+        thumbnail.style.transformOrigin = `${x}px ${y}px`;
+    });
+
+    preview.addEventListener('mouseleave', () => {
+        magnifier.style.display = 'none'; // Hide the magnifier when the mouse leaves
+        const thumbnail = preview.querySelector('.cert-thumbnail');
+        thumbnail.style.transformOrigin = 'center'; // Reset transform origin
+    });
+});
+    </script>
 </body>
 </html>
