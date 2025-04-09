@@ -22,7 +22,7 @@ body {
 }
 
 .main-nav {
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
     padding: 1rem 2rem;
     border-radius: 15px;
@@ -126,13 +126,13 @@ body {
 .certificate-card {
     position: relative;
     width: 300px;
-    backdrop-filter: blur(12px);
-    background: rgba(255, 255, 255, 0.1);
+    background: transparent; /* Transparent background */
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease, z-index 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border */
     margin: 0 auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional: Add a soft shadow */
 }
 
 .certificate-card:hover {
@@ -144,54 +144,65 @@ body {
     position: relative;
     height: 200px;
     overflow: hidden;
-    cursor: none; /* Hide the default cursor */
-}
-
-.certificate-preview::after {
-    content: '';
-    position: absolute;
-    width: 100px; /* Size of the magnifying glass */
-    height: 100px;
-    border: 2px solid rgba(255, 255, 255, 0.8);
-    border-radius: 50%; /* Make it circular */
-    pointer-events: none; /* Allow interaction with the image */
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transform: translate(-50%, -50%);
-    display: none; /* Initially hidden */
-    z-index: 20;
 }
 
 .cert-thumbnail {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    transform-origin: center; /* Set the origin for scaling */
-}
-
-.certificate-card:hover .cert-thumbnail {
-    transform: scale(1.5); /* Subtle zoom effect */
-}
-
-.certificate-preview:hover {
-    cursor: none; /* Hide the default cursor */
-}
-
-.certificate-actions {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 1rem;
-    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    object-fit: contain; /* Ensure the entire image is visible */
+    padding: 10px; /* Add some padding around the image */
 }
 
 .certificate-info {
     padding: 1rem;
     color: white;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#caption {
+    margin: 15px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
