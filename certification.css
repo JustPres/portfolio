@@ -205,6 +205,26 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 500px) {
+    .modal {
+        display: none; /* Ensure the modal is hidden by default */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        padding: 1rem; /* Add padding to prevent the image from touching the edges */
+    }
+
+    .modal-content {
+        max-width: 90%; /* Ensure the image fits within the screen */
+        max-height: 70%; /* Adjust height for mobile */
+        border-radius: 10px; /* Keep rounded corners */
+    }
+
+    .close {
+        top: 10px; /* Adjust close button position for mobile */
+        right: 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .section-title {
         font-size: 2rem;
@@ -229,7 +249,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { /*I do not think this works, might remove it later :)*/
     .section-title {
         font-size: 1.75rem;
     }
