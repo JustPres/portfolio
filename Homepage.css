@@ -92,7 +92,7 @@ h1 {
 }
 nav > ul > li.active > a{
     color: #000000;
-     
+    cursor: default;
 }
 
 @media (max-width: 3840px) {

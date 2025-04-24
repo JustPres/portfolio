@@ -47,13 +47,11 @@ body{
     color: #6b6657;
 }
 .main-nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
-    color: #333;
+    color: #000000;
     cursor: default;
 }
  
- 
-
- @media (max-width: 425px) {
+@media (max-width: 425px) {
     .main-nav ul{
             justify-content: center;
             flex-wrap: wrap;
