@@ -127,6 +127,15 @@ body{
     font-size: 1rem; /* Reduced from 1.1rem */
 }
 
+.after-list-desc{
+  
+    margin: 1rem 0; /* Reduced margin */
+    padding: 1rem; /* Reduced padding */
+    border-radius: 10px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
 .technique-card {
     padding: 1rem; /* Reduced from 1.5rem */
     margin: 1rem 0; /* Reduced from 1.5rem */
