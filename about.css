@@ -21,6 +21,7 @@ body{
 }
 
 .main-nav {
+    -webkit-backdrop-filter: blur(10px); /* Added for Safari support */
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
     padding: 1rem 2rem;
@@ -113,6 +114,7 @@ body{
 }
 
 .content-card {
+    -webkit-backdrop-filter: blur(12px); /* For Safari support */
     backdrop-filter: blur(12px);
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;

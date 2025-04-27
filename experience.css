@@ -21,6 +21,7 @@ body{
 }
 
 .main-nav {
+    -webkit-backdrop-filter: blur(10px); /* Added for Safari support */
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
     padding: 1rem 2rem;
@@ -105,6 +106,7 @@ body{
  .section-title {
     text-align: center;
     color: white;
+    font-size: 2.5rem;
 }
  .timeline-section {
     padding: 4rem 2rem;
@@ -148,6 +150,7 @@ body{
 }
 
 .glass-card {
+    -webkit-backdrop-filter: blur(12px); /* For Safari support */
     backdrop-filter: blur(12px);
     background: rgba(255,255,255,0.1);
     border-radius: 15px;
