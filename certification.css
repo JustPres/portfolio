@@ -150,8 +150,13 @@ nav ul li {
 }
 
 .certificate-card:hover {
-    transform: scale(1.2); /* Enlarge the card on hover */
-    z-index: 10; /* Bring the card to the front */
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.certificate-card:hover .cert-thumbnail {
+    transform: scale(1.05);
 }
 
 .certificate-preview {
@@ -163,8 +168,8 @@ nav ul li {
 .cert-thumbnail {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensure the entire image is visible */
-    padding: 10px; /* Add some padding around the image */
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
 .certificate-info {
@@ -174,26 +179,32 @@ nav ul li {
 
 /* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    background-color: rgba(0, 0, 0, 0.85); /* Darker background */
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    padding: 20px;
 }
 
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Change to 100% width */
+    height: 100%; /* Change to 100% height */
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain; /* Keep contain to maintain aspect ratio */
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    background: transparent; /* Change to transparent */
+    padding: 0; /* Remove padding */
 }
-
 #caption {
     margin: 15px auto;
     text-align: center;
@@ -228,8 +239,8 @@ nav ul li {
     }
 
     .modal-content {
-        max-width: 90%; /* Ensure the image fits within the screen */
-        max-height: 70%; /* Adjust height for mobile */
+        max-width: 95%;
+        max-height: 80vh;
         border-radius: 10px; /* Keep rounded corners */
     }
 
