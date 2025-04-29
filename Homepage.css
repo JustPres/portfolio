@@ -22,20 +22,21 @@ body {
 }
 
 nav {
-    -webkit-backdrop-filter: blur(10px); /* Added for Safari support */
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem !important; /* Increased vertical padding from 0.3rem to 0.8rem */
     border-radius: 15px;
     margin-bottom: 2rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
-
 nav ul {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 2rem;
     list-style: none;
+    margin: 0 !important; /* Override Bootstrap margin */
+    padding: 0 !important; /* Override Bootstrap padding */
 }
 
 nav a {
@@ -43,6 +44,15 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    padding: 0 !important; /* Override Bootstrap padding */
+    display: flex;
+    align-items: center;
+}
+
+/* Add this to reset Bootstrap's li styles */
+nav ul li {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 nav a:hover {
@@ -179,3 +189,8 @@ nav > ul > li.active > a{
      
 }       
 }  
+.name{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}

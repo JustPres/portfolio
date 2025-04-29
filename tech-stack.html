@@ -6,26 +6,55 @@
     <link rel="icon" href="https://api.iconify.design/mdi:code-tags.svg" type="image/svg+xml">
     <link rel="stylesheet" href="tech-stack.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Justine Lopez | Tech Stack</title>
 </head>
 <body>
     <nav class="main-nav">
         <ul>
-            <li><a href="index.html" title="Currently in the Home page">
-                <img src="home_notactive.svg" title="Home" width="16px" height="16px"><span class="index">Home</span></a></li>
-            <li><a href="About.html" title="Learn more about me">                 
-                <img src="aboutme_notactive.svg" title="About" width="16px" height="16px"><span class="info">About</span></a></li> 
-            <li class="active"><a href="#" title="Showcase my Tech-Stack">
-                <img src="folder_active.svg" title="Tech-Stack" width="16px" height="16px"><span class="tech">Tech Stack</span></a></li>
-            <li><a href="certification.html" title="Browse certification details">
-                <img src="certificate_notactive.svg" title="Certificate" width="16px" height="16px"><span class="cert">Certificate</span></a></li>
-            <li><a href="experience.html" title="Explore academic experience">    
-                <img src="experience_notactive.svg" title="Experience" width="16px" height="16px"><span class="exp">Experience</span></a></li>
-            <li><a href="blog.html" title="Read my blog posts">                   
-                <img src="blog_notactive.svg" title="Blog" width="16px" height="16px"><span class="blog">Blog</span></a></li>   
-            <li><a href="contact.html" title="My contact details">                
-                <img src="contact_notactive.svg" title="contact" width="16px" height="16px"><span class="phone">Contact</span></a></li>
-            
+            <li>
+                <a href="index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Currently in the Home page">
+                    <img src="home_active.svg" alt="Home" width="16px" height="16px">
+                    <span class="index">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="About.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Learn more about me">
+                    <img src="aboutme_notactive.svg" alt="About" width="16px" height="16px">
+                    <span class="info">About</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Showcase my Tech-Stack">
+                    <img src="folder_notactive.svg" alt="Tech-Stack" width="16px" height="16px">
+                    <span class="tech">Tech Stack</span>
+                </a>
+            </li>
+            <li>
+                <a href="certification.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Browse certification details">
+                    <img src="certificate_notactive.svg" alt="Certificate" width="16px" height="16px">
+                    <span class="cert">Certificate</span>
+                </a>
+            </li>
+            <li>
+                <a href="experience.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Explore academic experience">
+                    <img src="experience_notactive.svg" alt="Experience" width="16px" height="16px">
+                    <span class="exp">Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="blog.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Read my blog posts">
+                    <img src="blog_notactive.svg" alt="Blog" width="16px" height="16px">
+                    <span class="blog">Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="My contact details">
+                    <img src="contact_notactive.svg" alt="Contact" width="16px" height="16px">
+                    <span class="phone">Contact</span>
+                </a>
+            </li>
         </ul>
     </nav>
     
@@ -129,6 +158,9 @@
             </div>
         </div>
     </section>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script>
+    <script src="tooltip.js"></script>
 </body>
 </html>
