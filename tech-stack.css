@@ -195,7 +195,7 @@ nav ul li {
 .c { background: url('c-logo.png');  background-size: contain; background-repeat: no-repeat;}
 .cpp { background: url('cpp-logo.png');  background-size: contain; background-repeat: no-repeat;}
 .bootstrap { background: url('bootstrap.png');  background-size: contain; background-repeat: no-repeat;}
-.android_studio { background: url('android_studio.png');  background-size: contain; background-repeat: no-repeat;}
+.android_studio { background: url('Android_Studio.png');  background-size: contain; background-repeat: no-repeat;}
 .vscode { background: url('vscode.png');  background-size: contain; background-repeat: no-repeat;}
 .github { background: url('github.png');  background-size: contain; background-repeat: no-repeat;}
 .html { background: url('html.png');  background-size: contain; background-repeat: no-repeat;}
@@ -207,7 +207,7 @@ nav ul li {
 .progress-bar.java { background: #007396; }
 .progress-bar.javascript { background: #F7DF1E; }
 .progress-bar.c { background: #A8B9CC; }
-.progress-bar.cpp { background: #00599C; }
+.progress-bar.cpp { background: #eeeff0; }
 .progress-bar.bootstrap { background: #7952B3; }
 .progress-bar.android_studio { background: #3DDC84; }
 .progress-bar.visual_studio_code { background: #00599C; }
@@ -221,19 +221,37 @@ nav ul li {
 
  
 
+ 
+
 @media (max-width: 768px) {
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 1rem;  
+        padding: 0 1rem; 
     }
 
-    nav ul{
-        display: flex;
-        gap: 1rem;
+    .skill-icon {
+        width: 50px;  
+        height: 50px;
     }
 
+    .skill-card {
+        padding: 1rem;  
+    }
+
+    .skill-name {
+        font-size: 0.9rem;  
+    }
+}
+
+ 
+@media (max-width: 375px) {
+    .skills-grid {
+        gap: 0.8rem;
+    }
     
     .skill-icon {
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
     }
 }
