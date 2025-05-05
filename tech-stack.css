@@ -195,7 +195,7 @@ nav ul li {
 .c { background: url('c-logo.png');  background-size: contain; background-repeat: no-repeat;}
 .cpp { background: url('cpp-logo.png');  background-size: contain; background-repeat: no-repeat;}
 .bootstrap { background: url('bootstrap.png');  background-size: contain; background-repeat: no-repeat;}
-.android_studio { background: url('Android_Studio.png');  background-size: contain; background-repeat: no-repeat;}
+.android_studio { background: url('android_studio.png');  background-size: contain; background-repeat: no-repeat;}
 .vscode { background: url('vscode.png');  background-size: contain; background-repeat: no-repeat;}
 .github { background: url('github.png');  background-size: contain; background-repeat: no-repeat;}
 .html { background: url('html.png');  background-size: contain; background-repeat: no-repeat;}
@@ -209,7 +209,7 @@ nav ul li {
 .progress-bar.c { background: #A8B9CC; }
 .progress-bar.cpp { background: #00599C; }
 .progress-bar.bootstrap { background: #7952B3; }
-.progress-bar.android_studio { background: #3DDC84; }
+.progress-bar.Android_Studio { background: #3DDC84; }
 .progress-bar.visual_studio_code { background: #00599C; }
 .progress-bar.git_hub { background: #171818; }
 .progress-bar.ht_ml { background: #E34F26; }
