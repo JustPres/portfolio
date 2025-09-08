@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; } 
-body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
     min-height: 100vh;
     background: linear-gradient(45deg, #fdfdfd, #868886, #585650, #0a0a09);
     background-size: 400% 400%;
@@ -14,9 +16,17 @@ body{
 }
 
 @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 
 }
 
@@ -24,18 +34,22 @@ nav {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
-    padding: 0.8rem 2rem !important; /* Increased vertical padding from 0.3rem to 0.8rem */
+    padding: 0.8rem 2rem !important;
+    /* Increased vertical padding from 0.3rem to 0.8rem */
     border-radius: 15px;
     margin-bottom: 2rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
 nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
     list-style: none;
-    margin: 0 !important; /* Override Bootstrap margin */
-    padding: 0 !important; /* Override Bootstrap padding */
+    margin: 0 !important;
+    /* Override Bootstrap margin */
+    padding: 0 !important;
+    /* Override Bootstrap padding */
 }
 
 nav a {
@@ -43,7 +57,8 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-    padding: 0 !important; /* Override Bootstrap padding */
+    padding: 0 !important;
+    /* Override Bootstrap padding */
     display: flex;
     align-items: center;
 }
@@ -57,65 +72,77 @@ nav ul li {
 .main-nav a:hover {
     color: #6b6657;
 }
-.main-nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
+
+.main-nav>ul>li.active>a {
+    /* this is new, what this does is access the first List and Color the text */
     color: #000000;
     cursor: default;
 }
+
 /*-------------------------------------------*/
 @media (max-width: 425px) {
-    .main-nav ul{
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-     }
-     
- }
- 
+    .main-nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 
- @media (max-width: 3840px) {
-    nav a img{
+}
+
+
+@media (max-width: 3840px) {
+    nav a img {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 700px) {
-    nav a img{
+    nav a img {
         display: block;
     }
-    
+
 }
 
 @media (max-width: 700px) {
 
-    nav a .index{
+    nav a .index {
         display: none;
     }
-    nav a .tech{
+
+    nav a .tech {
         display: none;
     }
-    nav a .cert{ 
+
+    nav a .cert {
         display: none;
     }
-    nav a .exp{
+
+    nav a .exp {
         display: none;
     }
-    nav a .blog{
+
+    nav a .blog {
         display: none;
     }
-    nav a .info{
+
+    nav a .info {
         display: none;
     }
-    nav a .phone{
+
+    nav a .phone {
         display: none;
     }
-    nav a .docu{
+
+    nav a .docu {
         display: none;
+    }
 }
-} 
+
 .tech-stack {
     padding: 2rem 1rem;
-    -webkit-backdrop-filter: blur(12px); /* For Safari support */
+    -webkit-backdrop-filter: blur(12px);
+    /* For Safari support */
     backdrop-filter: blur(12px);
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
@@ -131,6 +158,7 @@ nav ul li {
     margin-bottom: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .section-description {
     color: white;
     font-size: 1.2rem;
@@ -138,6 +166,7 @@ nav ul li {
     margin-bottom: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -148,7 +177,7 @@ nav ul li {
 
 .skill-card {
     background: rgba(255, 255, 255, 0.1);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -189,49 +218,198 @@ nav ul li {
 }
 
 /* Language-specific styling */
-.python { background: url('python-logo.png'); background-size: contain; }
-.java { background: url('java-logo.png');  background-size: contain; }
-.javascript { background: url('javascript-logo.png');  background-size: contain; }
-.c { background: url('c-logo.png');  background-size: contain; background-repeat: no-repeat;}
-.cpp { background: url('cpp-logo.png');  background-size: contain; background-repeat: no-repeat;}
-.bootstrap { background: url('bootstrap.png');  background-size: contain; background-repeat: no-repeat;}
-.android_studio { background: url('android_studio.png');  background-size: contain; background-repeat: no-repeat;}
-.vscode { background: url('vscode.png');  background-size: contain; background-repeat: no-repeat;}
-.github { background: url('github.png');  background-size: contain; background-repeat: no-repeat;}
-.html { background: url('html.png');  background-size: contain; background-repeat: no-repeat;}
-.css { background: url('css.png');  background-size: contain; background-repeat: no-repeat;}
-.git { background: url('git.png');  background-size: contain; background-repeat: no-repeat;}
+.python {
+    background: url('python-logo.png');
+    background-size: contain;
+}
+
+.java {
+    background: url('java-logo.png');
+    background-size: contain;
+}
+
+.javascript {
+    background: url('javascript-logo.png');
+    background-size: contain;
+}
+
+.c {
+    background: url('c-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cpp {
+    background: url('cpp-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bootstrap {
+    background: url('bootstrap.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.android_studio {
+    background: url('android_studio.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.vscode {
+    background: url('vscode.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.github {
+    background: url('github.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.html {
+    background: url('html.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.css {
+    background: url('css.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.git {
+    background: url('git.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.node {
+    background: url('nodejs.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.post {
+    background: url('postman.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.flutter {
+    background: url('flutter.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mongodb {
+    background: url('mongodb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.apexoracle {
+    background: url('apexoracle.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mysql {
+    background: url('mysql.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.progress-bar.python {
+    background: #F7DF1E;
+}
+
+.progress-bar.java {
+    background: #007396;
+}
+
+.progress-bar.javascript {
+    background: #F7DF1E;
+}
+
+.progress-bar.c {
+    background: #A8B9CC;
+}
+
+.progress-bar.cpp {
+    background: #00599C;
+}
+
+.progress-bar.bootstrap {
+    background: #7952B3;
+}
+
+.progress-bar.Android_Studio {
+    background: #3DDC84;
+}
+
+.progress-bar.visual_studio_code {
+    background: #00599C;
+}
+
+.progress-bar.git_hub {
+    background: #171818;
+}
+
+.progress-bar.ht_ml {
+    background: #E34F26;
+}
+
+.progress-bar.cs_s {
+    background: #1572B6;
+}
+
+.progress-bar.g_it {
+    background: #F34F29;
+}
+
+.progress-bar.node_js {
+    background: #339933;
+}
+
+.progress-bar.postman {
+    background: #FF6C37;
+}
+
+.progress-bar.flutter {
+    background: #02569B;
+}
+
+.progress-bar.mongodb {
+    background: #47A248;
+}
+
+.progress-bar.mysql {
+    background: #4479A1;
+}
+
+.progress-bar.apexoracle {
+    background: #F80000;
+}
 
 
-.progress-bar.python { background: #F7DF1E; }
-.progress-bar.java { background: #007396; }
-.progress-bar.javascript { background: #F7DF1E; }
-.progress-bar.c { background: #A8B9CC; }
-.progress-bar.cpp { background: #00599C; }
-.progress-bar.bootstrap { background: #7952B3; }
-.progress-bar.Android_Studio { background: #3DDC84; }
-.progress-bar.visual_studio_code { background: #00599C; }
-.progress-bar.git_hub { background: #171818; }
-.progress-bar.ht_ml { background: #E34F26; }
-.progress-bar.cs_s { background: #1572B6; }
-.progress-bar.g_it { background: #F34F29; }
 
 
-
-
- 
 
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
-    nav ul{
+    nav ul {
         display: flex;
         gap: 1rem;
     }
 
-    
+
     .skill-icon {
         width: 60px;
         height: 60px;
