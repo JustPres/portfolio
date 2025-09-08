@@ -323,6 +323,12 @@ nav ul li {
     background-repeat: no-repeat;
 }
 
+.arduino {
+    background: url('arduino.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .progress-bar.python {
     background: #F7DF1E;
 }
@@ -393,6 +399,10 @@ nav ul li {
 
 .progress-bar.apexoracle {
     background: #F80000;
+}
+
+.progress-bar.arduino {
+    background: #00979D;
 }
 
 
