@@ -118,38 +118,56 @@ nav ul li.disabled>a {
 
 .dropdown-content {
     display: none;
-    left: 50%;
-    transform: translateX(20%);
     position: absolute;
+    left: 50%;
+    transform: translateX(20%); /* Return to original desktop position */
+    background: rgba(255, 255, 255, 0.08);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 12px;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 
 .drop-down:hover .dropdown-content {
     display: block;
 }
 
-
 .dropdown-content a {
     display: block;
-    background: rgba(255, 255, 255, 0.22);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.06);
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    padding: 0.5rem 1.2rem;
-    margin: 0.4rem auto;
-    border-radius: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 0.75rem 1rem;
+    margin: 4px 0;
+    border-radius: 8px;
     text-align: center;
     font-weight: 500;
-    transition: background 0.3s, color 0.3s;
-    width: 80%;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .dropdown-content {
+        position: fixed;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 32px);
+        max-width: 300px;
+        margin: 8px auto;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown-content a {
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+        margin: 6px 0;
+    }
 }
 
 
@@ -379,4 +397,66 @@ nav ul li.disabled>a {
 .card-link:hover {
     background: rgba(31, 38, 135, 0.35);
     color: #fff;
+}
+
+/* Update existing media queries and add new ones */
+@media (max-width: 768px) {
+    nav {
+        padding: 0.5rem 1rem !important;
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.5rem !important;
+    }
+
+    /* Make icons visible and text hidden on mobile */
+    nav a img {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    nav a span {
+        display: none;
+    }
+
+    /* Adjust dropdown position and width for mobile */
+    .dropdown-content {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        width: 90%;
+        max-width: 300px;
+        margin-top: 0.5rem;
+    }
+
+    /* Adjust project cards for mobile */
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .glass-card {
+        max-width: 100%;
+    }
+}
+
+/* Add specific tablet breakpoint if needed */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
