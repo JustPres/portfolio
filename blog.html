@@ -36,11 +36,18 @@
                     data-bs-title="Browse certification details"><img src="certificate_notactive.svg" alt="Certificate"
                         width="16px" height="16px"><span class="cert">Certificate</span></a>
             </li>
-            <li>
-                <a href="experience.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            <li class="drop-down disabled" data-bs-toggle="tooltip" data-bs-placement="right">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right"
                     data-bs-title="Explore academic experience"><img src="experience_notactive.svg" alt="Experience"
                         width="16px" height="16px"><span class="exp">Experience</span></a>
+                <div class="dropdown-content" id="experience-dropdown">
+                    <a href="experience.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-title="My educational background">Education</a>
+                    <a href="work.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-title="My work experience">Work</a>
+                </div>
             </li>
+
             <li class="active">
                 <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Read my blog posts"><img
                         src="blog_active.svg" alt="Blog" width="16px" height="16px"><span class="blog">Blog</span></a>
@@ -53,7 +60,6 @@
 
         </ul>
     </nav>
-    <h1 id="introductory-blog">Blog</h1>
     <div class="blog-container">
         <h1 class="blog-title">Quick Morning Exercise By Justine Lopez: 5 Techniques for Quick Exercise</h1>
 

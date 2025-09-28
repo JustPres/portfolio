@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; } 
-body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
     min-height: 100vh;
     background: linear-gradient(45deg, #fdfdfd, #868886, #585650, #0a0a09);
     background-size: 400% 400%;
@@ -14,9 +16,17 @@ body{
 }
 
 @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 
 }
 
@@ -24,18 +34,22 @@ nav {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
-    padding: 0.8rem 2rem !important; /* Increased vertical padding from 0.3rem to 0.8rem */
+    padding: 0.8rem 2rem !important;
+    /* Increased vertical padding from 0.3rem to 0.8rem */
     border-radius: 15px;
     margin-bottom: 2rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
 nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
     list-style: none;
-    margin: 0 !important; /* Override Bootstrap margin */
-    padding: 0 !important; /* Override Bootstrap padding */
+    margin: 0 !important;
+    /* Override Bootstrap margin */
+    padding: 0 !important;
+    /* Override Bootstrap padding */
 }
 
 nav a {
@@ -43,7 +57,8 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-    padding: 0 !important; /* Override Bootstrap padding */
+    padding: 0 !important;
+    /* Override Bootstrap padding */
     display: flex;
     align-items: center;
 }
@@ -57,180 +72,277 @@ nav ul li {
 .main-nav a:hover {
     color: #6b6657;
 }
-.main-nav > ul > li.active > a{  /* this is new, what this does is access the first List and Color the text */
+
+.main-nav>ul>li.active>a {
+    /* this is new, what this does is access the first List and Color the text */
     color: #000000;
     cursor: default;
 }
- 
+
+nav ul li.disabled>a {
+    color: #ffffff !important;
+    cursor: not-allowed;
+    pointer-events: none;
+
+}
+
 @media (max-width: 425px) {
-    .main-nav ul{
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-     }
-     
- }
- @media (max-width: 3840px) {
-    nav a img{
+    .main-nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 3840px) {
+    nav a img {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 700px) {
-    nav a img{
+    nav a img {
         display: block;
     }
-    
+
 }
 
 @media (max-width: 700px) {
 
-    nav a .index{
+    nav a .index {
         display: none;
     }
-    nav a .tech-stack{
+
+    nav a .tech-stack {
         display: none;
     }
-    nav a .cert{ 
+
+    nav a .cert {
         display: none;
     }
-    nav a .exp{
+
+    nav a .exp {
         display: none;
     }
-    nav a .blog{
+
+    nav a .blog {
         display: none;
     }
-    nav a .info{
+
+    nav a .info {
         display: none;
     }
-    nav a .phone{
+
+    nav a .phone {
         display: none;
     }
-    nav a .docu{
+
+    nav a .docu {
         display: none;
-}
-   
+    }
+
 }
 
-#introductory-blog{
+#introductory-blog {
     text-align: center;
     color: white;
 }
+
 .blog-container {
     max-width: 800px;
-    width: 90%; /* Added for better mobile handling */
+    width: 90%;
+    /* Added for better mobile handling */
     margin: 2rem auto;
-    -webkit-backdrop-filter: blur(12px); /* Added for Safari support */
+    -webkit-backdrop-filter: blur(12px);
+    /* Added for Safari support */
     backdrop-filter: blur(12px);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    padding: 1.5rem; /* Reduced from 2rem */
+    padding: 1.5rem;
+    /* Reduced from 2rem */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .blog-title {
     color: white;
-    font-size: 2rem; /* Reduced from 2.5rem */
+    font-size: 2rem;
+    /* Reduced from 2.5rem */
     margin-bottom: 1rem;
-    line-height: 1.3; /* Added for better readability */
+    line-height: 1.3;
+    /* Added for better readability */
     text-shadow: 2px 2px 4px rgba(80, 71, 71, 0.1);
 }
 
 .blog-content {
     color: rgba(255, 255, 255, 0.9);
-    line-height: 1.6; /* Reduced from 1.8 */
-    font-size: 1rem; /* Reduced from 1.1rem */
+    line-height: 1.6;
+    /* Reduced from 1.8 */
+    font-size: 1rem;
+    /* Reduced from 1.1rem */
 }
 
-.after-list-desc{
-  
-    margin: 1rem 0; /* Reduced margin */
-    padding: 1rem; /* Reduced padding */
-    border-radius: 10px; /* Rounded corners */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+.after-list-desc {
+
+    margin: 1rem 0;
+    /* Reduced margin */
+    padding: 1rem;
+    /* Reduced padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent background */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
 }
 
 .technique-card {
-    padding: 1rem; /* Reduced from 1.5rem */
-    margin: 1rem 0; /* Reduced from 1.5rem */
+    padding: 1rem;
+    /* Reduced from 1.5rem */
+    margin: 1rem 0;
+    /* Reduced from 1.5rem */
 }
 
 .author-section {
-    flex-direction: column; /* Stack vertically on mobile */
+    flex-direction: column;
+    /* Stack vertically on mobile */
     text-align: center;
-    gap: 0.5rem; /* Reduced gap */
-    padding: 1rem; /* Reduced from 1.5rem */
+    gap: 0.5rem;
+    /* Reduced gap */
+    padding: 1rem;
+    /* Reduced from 1.5rem */
 }
 
 .author-img {
-    width: 60px; /* Reduced from 80px */
-    height: 60px; /* Reduced from 80px */
+    width: 60px;
+    /* Reduced from 80px */
+    height: 60px;
+    /* Reduced from 80px */
     border-radius: 50%;
     object-fit: cover;
 }
 
 .blog-meta {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9rem; /* Reduced from 1rem */
-    margin-bottom: 1.5rem; /* Reduced from 2rem */
+    font-size: 0.9rem;
+    /* Reduced from 1rem */
+    margin-bottom: 1.5rem;
+    /* Reduced from 2rem */
 }
 
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .blog-container {
-        width: 95%; /* More edge space on mobile */
-        padding: 1rem; /* Further reduced padding */
+        width: 95%;
+        /* More edge space on mobile */
+        padding: 1rem;
+        /* Further reduced padding */
     }
 
     .blog-title {
-        font-size: 1.5rem; /* Smaller font for mobile */
+        font-size: 1.5rem;
+        /* Smaller font for mobile */
         margin-bottom: 0.5rem;
     }
 
     .blog-meta {
-        font-size: 0.8rem; /* Smaller meta text */
+        font-size: 0.8rem;
+        /* Smaller meta text */
         margin-bottom: 1rem;
     }
 
     .quote-block {
-        margin: 1rem 0; /* Reduced margin */
-        padding: 1rem; /* Reduced padding */
+        margin: 1rem 0;
+        /* Reduced margin */
+        padding: 1rem;
+        /* Reduced padding */
     }
 
     .author-section {
-        margin-top: 2rem; /* Reduced top margin */
+        margin-top: 2rem;
+        /* Reduced top margin */
     }
 
     #social-media {
-        display: block; /* Better for mobile tapping */
+        display: block;
+        /* Better for mobile tapping */
         margin-top: 0.5rem;
     }
 }
 
 @media (max-width: 480px) {
     .blog-container {
-        border-radius: 15px; /* Slightly smaller radius */
+        border-radius: 15px;
+        /* Slightly smaller radius */
     }
-    
+
     .technique-card,
     .quote-block {
-        margin: 0.75rem 0; /* Tighter spacing */
+        margin: 0.75rem 0;
+        /* Tighter spacing */
     }
 }
-#social a{
-    text-decoration: none; 
-    font-weight: bolder; 
+
+#social a {
+    text-decoration: none;
+    font-weight: bolder;
     background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
     background-size: 300% 300%;
-    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-background-clip: text;
+    /* Clips the background to the text */
     background-clip: text;
-    -webkit-text-fill-color: transparent; /* Makes the text color transparent so the background shows through */
-    transition: background-position 0.5s ease; /* Animates the background position on hover */
+    -webkit-text-fill-color: transparent;
+    /* Makes the text color transparent so the background shows through */
+    transition: background-position 0.5s ease;
+    /* Animates the background position on hover */
 }
-    
-#social a:hover{
-    background-position: 100% 0;  /* Moves the gradient to create the animation effect on hover */
+
+#social a:hover {
+    background-position: 100% 0;
+    /* Moves the gradient to create the animation effect on hover */
+}
+
+.dropdown-content {
+
+    display: none;
+    left: 50%;
+    transform: translateX(20%);
+    position: absolute;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.drop-down:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    background: rgba(255, 255, 255, 0.22);
+    /* Glassmorphism bubble */
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: b lur(8px);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem 1.2rem;
+    margin: 0.4rem auto;
+    border-radius: 30px;
+    /* Bubble shape */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+    width: 80%;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.35);
+    color: #6b6657;
 }
