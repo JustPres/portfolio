@@ -36,10 +36,15 @@
                     data-bs-title="Browse certification details"><img src="certificate_notactive.svg" alt="Certificate"
                         width="16px" height="16px"><span class="cert">Certificate</span></a>
             </li>
-            <li>
-                <a href="experience.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    data-bs-title="Explore academic experience"><img src="experience_notactive.svg" alt="Experience"
-                        width="16px" height="16px"><span class="exp">Experience</span></a>
+            <li class="drop-down disabled" data-bs-toggle="tooltip" data-bs-placement="right">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right"><img src="experience_notactive.svg"
+                        alt="Experience" width="16px" height="16px"><span class="exp">Experience</span></a>
+                <div class="dropdown-content" id="experience-dropdown">
+                    <a href="experience.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-title="My educational background">Education</a>
+                    <a href="work.html" data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-title="My work experience">Projects</a>
+                </div>
             </li>
             <li>
                 <a href="blog.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
