@@ -72,7 +72,7 @@ nav ul li {
 
 
 nav ul li.disabled>a {
-    color: #ffffff !important;
+    color: #000000 !important;
     cursor: not-allowed;
     pointer-events: none;
 }
@@ -120,7 +120,8 @@ nav ul li.disabled>a {
     display: none;
     position: absolute;
     left: 50%;
-    transform: translateX(20%); /* Return to original desktop position */
+    transform: translateX(20%);
+    /* Return to original desktop position */
     background: rgba(255, 255, 255, 0.08);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
